@@ -1,0 +1,14 @@
+{
+  "name": "debugging",
+  "version": "1.0.0",
+  "description": "Part of the SEP-Intro sample project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.0"
+  }
+}
