@@ -1,0 +1,11 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Part of the SEP-Intro sample project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
