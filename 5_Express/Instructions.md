@@ -18,7 +18,7 @@ This project was generated using the [express-generator](https://expressjs.com/e
 
 First, start by downloading required dependencies. Using the following command `$ yarn install`.
 
-## Usages
+## Usage
 
 You can start this project by executing `$ yarn start`. Afterwards, you should be able to visit the [website](http://localhost:3000) from the image below.
 
