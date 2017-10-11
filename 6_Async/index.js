@@ -41,9 +41,9 @@ function callbackFlow() {
 
 function promiseFlow() {
     request('special-page', true)
-        .then(res => writeFile(path.join(__dirname, 'downloads', 'promise-special-page.json'), JSON.stringify(res)), err => { throw err })
-        .then(_ => request('fail-page', false), err => { throw err })
-        .then(res => writeFile(path.join(__dirname, 'downloads', 'promise-fail-page.json'), JSON.stringify(res)), err => { throw err })
+        .then(res => writeFile(path.join(__dirname, 'downloads', 'promise-special-page.json'), JSON.stringify(res)))
+        .then(_ => request('fail-page', false))
+        .then(res => writeFile(path.join(__dirname, 'downloads', 'promise-fail-page.json'), JSON.stringify(res)))
         .catch(err => console.error(err.message));
 }
 
