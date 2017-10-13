@@ -12,12 +12,12 @@ function timeout(ms = 3000) {
 
 
 class GreetingBot {
-    constructor(accountID = process.env.LP_ACCOUNT, username = process.env.LP_USER, password = process.env.LP_PASS) {
+    constructor(accountID = process.env.LP_ACCOUNT, username = process.env.LP_USER, password = process.env.LP_PASS, csds = process.env.LP_CSDS) {
         this.accountId = accountID;
         this.username = username;
         this.password = password;
         this.isConnected = false;
-        this.core = new Agent({ accountId: accountID, username: username, password: password, 'csdsDomain': 'hc1n.dev.lprnd.net' });
+        this.core = new Agent({ accountId: accountID, username: username, password: password, csdsDomain: csds });
         this.openConversations = {};
 
         this.init();
